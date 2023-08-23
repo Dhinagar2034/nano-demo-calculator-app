@@ -12,8 +12,9 @@ def add():
     data = request.json
     fn = data["first"]
     sn = data["second"]
+    res = fn+sn
     return {
-        "result":fn+sn
+        "result":res
     }
 
 @app.route("/calculator/subtract", methods=['POST'])
